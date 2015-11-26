@@ -1,0 +1,384 @@
+/* =============================================================================
+TESTING SECTION
+============================================================================= */
+.item img{
+	width:100%;
+}
+
+.tak-profile {
+	display:block;
+	width:300px;
+	height:300px;
+	border-radius: 150px;
+	border:2px solid #fff;
+	margin: 5px auto;
+	padding:10px;
+}
+
+.panel {
+	color:#383b3e;
+}
+.pdf-access {
+	display:inline-block;
+	background: #383b3e;
+	padding:3px 10px;
+	margin: 1px auto;
+	width:100%;
+	transition-duration:0.2s;
+	border-radius:5px;
+}
+.pdf-access:hover {
+	background: #428BCA;
+	transition-duration:0.2s;
+}
+
+.pdf-access .btn {
+	display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+	.pdf-access {width:48%;}
+}
+
+.on-bottom {
+	padding:50px 0;
+}
+
+.disabled-link {
+	pointer-events: none;
+	cursor: default;
+	color:#333;
+}
+
+blockquote {
+	font-size:0.8em;
+}
+
+blockquote small {
+	font-size:1.5em;
+}
+
+/* =============================================================================
+FONTS LOADER
+============================================================================= */
+
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+}
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+/* =============================================================================
+MAIN THEME
+============================================================================= */
+
+html { 
+	margin:0;
+}
+
+body {
+	background: url("../img/background.png") no-repeat center fixed; 
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-color: #000;
+	color:#fff;
+	font-family: 'Lato', arial, sans-serif;
+	font-size:160%;
+	margin-top:50px;
+}	
+
+h1 {
+	position:relative;
+	display:block;
+	font-size: 5em;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	h1 {font-size: 3em;}
+	.navbar-brand {	display:none; }
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align:center;
+	letter-spacing: 0.1em;
+	color: #d5d6d7;
+	padding:100px 0 0 0;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #D3D7D1;
+}
+
+section {
+	background: rgba(35,38,41,0.8);
+	margin:50px 0;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+.head-img {
+	width:100px;
+	height:100px;
+	background: #fff;
+	border-radius: 50px;
+	padding:5px;
+	margin-top:-120px;
+}
+
+/* =============================================================================
+CUSTOM DESIGN
+============================================================================= */
+
+.icons {
+	width: 100%;
+	text-align: center;
+	margin:25px 0 150px 0;
+}
+
+[class*="flaticon-"] {   
+	font-family: Flaticon;
+	font-size: 3em;
+	display:inline-block;
+	padding: 0 10px;
+}
+[class*="flaticon-"]:hover {
+	text-shadow: 0 0 25px #000;
+}
+.flaticon-facebook2:before {
+	content: "\e000";
+	color: #3b5998;
+}
+.flaticon-github10:before {
+	content: "\e001";
+	color: #f0efe7;
+}
+.flaticon-google-plus:before {
+	content: "\e002";
+	color: #d9432f;
+}
+.flaticon-linkedin:before {
+	content: "\e003";
+	color: #808080;
+}
+.flaticon-twitter:before {
+	content: "\e004";
+	color: #55acee;
+}
+.flaticon-youtube30:before {
+	content: "\e005";
+	color: #bf2626;
+}
+.flaticon-facebook2:hover, .flaticon-github10:hover, .flaticon-google-plus:hover, .flaticon-linkedin:hover, .flaticon-twitter:hover, .flaticon-youtube30:hover {
+	transform-origin: top 0 left 0;
+	transform: scale(1.3);
+	padding: 0 10px;
+	transition-duration:0.1s;
+}
+
+@media screen and (max-width: 768px), (max-device-width: 768px) {
+	[class*="flaticon-"] {
+		font-size: 4em;
+		width:130px;
+		text-align: center;
+		line-height: 1.8em;
+	}
+}
+
+.skill {
+	padding:0;
+	overflow:hidden;
+}
+
+.skill img {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+	display:block; 
+	width:54px;
+	height:54px;
+	margin:15px auto;
+	clear:both;
+}
+.skill-item {
+	list-style-type: none;
+	color:#fff;
+	margin: 1%;
+	padding: 0;
+	background:#383b3e;
+	width:48%;
+	height:120px;
+	text-align: center;
+	overflow:hidden;
+	float:left;
+	transition-duration:0.3s;
+
+}
+.skill-item:hover {
+	background:#428BCA;
+	transition-duration:0.3s;
+}
+
+@media screen and (min-width: 768px) {
+	.skill-item {
+		width:98%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.skill-item {
+		width:48%;
+	}
+}
+
+/* =============================================================================
+SIDE PROJECTS
+============================================================================= */
+
+.associate {
+	display:inline-block;
+	padding: 0;
+	background:#383b3e;
+	text-align: center;
+	overflow:hidden;
+	padding:5px;
+}
+.stats {
+	margin: 3%;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	text-align: center;
+	overflow:hidden;
+	float:left;
+	padding:2px;
+	width:94%;
+	line-height: 2em;
+}
+
+/* =============================================================================
+FOOTER
+============================================================================= */
+
+footer {
+	position:relative;
+	background: rgba(35,38,41,0.9);
+	bottom:0px;
+	margin:0;
+	overflow:hidden;
+	padding:25px;
+}
+
+footer img {
+	float:left;
+	width:100px;
+	margin-right:50px;
+}
+
+/* =============================================================================
+ANIMATIONS
+============================================================================= */
+
+.animated-title { 
+	-webkit-animation-duration: 1s; 
+	animation-duration: 1s; 
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+	-webkit-animation-fill-mode: both; 
+	animation-fill-mode: both; 
+	-webkit-animation-timing-function: ease-out; 
+	animation-timing-function: ease-out; 
+} 
+
+@-webkit-keyframes flipInX { 
+	0% { 
+		-webkit-transform: perspective(400px) rotateX(90deg); 
+		opacity: 0; 
+	} 
+	40% { 
+		-webkit-transform: perspective(400px) rotateX(-10deg); 
+	} 
+	70% { 
+		-webkit-transform: perspective(400px) rotateX(10deg); 
+	} 
+	100% { 
+		-webkit-transform: perspective(400px) rotateX(0deg); 
+		opacity: 1; 
+	} 
+} 
+@keyframes flipInX { 
+	0% { 
+		transform: perspective(400px) rotateX(90deg); 
+		opacity: 0; 
+	} 
+	40% { 
+		transform: perspective(400px) rotateX(-10deg); 
+	} 
+	70% { 
+		transform: perspective(400px) rotateX(10deg); 
+	} 
+	100% { 
+		transform: perspective(400px) rotateX(0deg); 
+		opacity: 1; 
+	} 
+} 
+
+.flipInX { 
+	-webkit-backface-visibility: visible !important; 
+	-webkit-animation-name: flipInX; 
+	backface-visibility: visible !important; 
+	animation-name: flipInX; 
+}
+
+footer img:hover {
+	-webkit-animation-name: spinner; 
+	-webkit-animation-timing-function: linear; 
+	-webkit-animation-iteration-count: infinite; 
+	-webkit-animation-duration: 1.2s; 
+	animation-name: spinner; 
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite; 
+	animation-duration: 1.2s; 
+	-webkit-transform-style: preserve-3d; 
+	-moz-transform-style: preserve-3d; 
+	-ms-transform-style: preserve-3d; 
+	transform-style: preserve-3d;
+}
+
+@-webkit-keyframes spinner { 
+	from 
+	{ 
+		-webkit-transform: rotateY(0deg); 
+	} 
+	to { 
+		-webkit-transform: rotateY(-360deg); 
+	} 
+}
+
+@keyframes spinner { 
+	from { 
+		-moz-transform: rotateY(0deg); 
+		-ms-transform: rotateY(0deg); 
+		transform: rotateY(0deg); 
+	} 
+	to 
+	{ 
+		-moz-transform: rotateY(-360deg); 
+		-ms-transform: rotateY(-360deg); 
+		transform: rotateY(-360deg); 
+
+	} 
+}
