@@ -74,7 +74,8 @@
 
 						<br>Bonne visite ;)</p>
 					</div>
-					<div class="col-lg-4 col-xs-12"><img class="tak-profile" src="img/tak-profile.svg"></div>
+					<div class="col-lg-4 col-xs-12"><img class="tak-profile" src="img/tak-profile.svg" data-toggle="popover" tabindex="50" data-content="Vectorisation de ma tête par <strong>Lellex</strong> :D" data-placement="top"/>
+					</div>
 			</section>
 
 			<section class="row" id="skill">
@@ -138,59 +139,30 @@
 
 						<div class="pdf-access">
 							Les Gardiens de la Trame (Extrait)
-							<button type="button" class="btn btn-default btn-xs pull-right">
+							<a href="texts/Expeditio.pdf" target="_blank"><button type="button" class="btn btn-default btn-xs pull-right">
 								<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-							</button>
+							</button></a>
 						</div>
 
 						<div class="pdf-access">
 							Le Dernier Empire (Extrait)
-							<button type="button" class="btn btn-default btn-xs pull-right">
+							<a href="texts/LastEmpireofSolarSystem.pdf" target="_blank"><button type="button" class="btn btn-default btn-xs pull-right">
 								<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-							</button>
+							</button></a>
 						</div>
 
 						<div class="pdf-access">
 							L'Homme au Masque de Verre
-							<button type="button" class="btn btn-default btn-xs pull-right">
+							<a href="texts/Homme au Masque de Verre.pdf" target="_blank"><button type="button" class="btn btn-default btn-xs pull-right">
 								<span class="glyphicon glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-							</button>
+							</button></a>
 						</div>
 
 						<div class="pdf-access">
 							La Dystopie du Mal
-							<button type="button" class="btn btn-default btn-xs pull-right">
+							<a href="texts/La Dystopie du Mal.pdf" target="_blank"><button type="button" class="btn btn-default btn-xs pull-right">
 								<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-							</button>
-						</div>
-
-						<div class="pdf-access">
-							Fanfic sworienne
-							<button type="button" class="btn btn-default btn-xs pull-right">
-								<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-							</button>
-						</div>
-
-						<div class="pdf-access">
-							La Dystopie du Mal 
-							<button type="button" class="btn btn-default btn-xs pull-right">
-								<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-							</button>
-						</div>
-
-
-						<div class="pdf-access">
-							La Chute du Pi 
-							<button type="button" class="btn btn-default btn-xs pull-right">
-								<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-							</button>
-						</div>
-
-						<div class="pdf-access">
-							La Chute du Pi 
-							<button type="button" class="btn btn-default btn-xs pull-right">
-								<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-							</button>
+							</button></a>
 						</div>
 
 					</p>
@@ -201,7 +173,6 @@
 
 		<footer id="contact">
 
-			<a href="#"><img src="img/english.svg" alt="Put it in english" title="Put it in english !"></a>
 			<p><a href="mailto:takcastel@gmail.com" class="btn btn-default">Me contacter</a> <br>
 
 			<br>Powered by <em>Boostrap</em> - 2015</p>
@@ -224,6 +195,13 @@
 					window.location.hash = hash;
 				});
 			});
+		});
+
+		$(function(){
+			$('[data-toggle=popover]').popover({
+				html: true,
+				title: 'Crédits'
+			}) 
 		});
 
 	</script>

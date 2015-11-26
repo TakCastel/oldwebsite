@@ -13,6 +13,15 @@ TESTING SECTION
 	border:2px solid #fff;
 	margin: 5px auto;
 	padding:10px;
+	cursor: pointer;
+}
+
+.popover-title {
+    color: #333;
+}
+
+.popover-content {
+    color: #333;
 }
 
 .panel {
